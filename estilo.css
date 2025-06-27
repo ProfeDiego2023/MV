@@ -1,0 +1,681 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+header h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #3D5D1C;
+  font-size: 5em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+body {
+  background-color: rgb(9, 87, 41);
+}
+
+.he {
+  width: 100%;
+  height: 450px;
+}
+.he h1{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: hsl(90, 54%, 24%);
+  text-align: center;
+  font-size: 5em;
+  margin-top: 1em;
+}
+
+header h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: hsl(90, 54%, 24%);
+  position: relative;
+  font-size: 60px;
+  z-index: 100;
+  
+}
+
+.imagenfondo img {
+  width: 100%;
+  height: 500px;
+  top: -10em;
+  position: relative;
+  object-fit:fill;
+  z-index: -100;
+}
+
+.publicidad {
+  top: 6vw;
+  position: relative;
+  width: 20vw;
+  height: 60vw;
+  left: 20vw;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 1em;
+  border-color: 5px solid hsl(90, 54%, 24%);
+  
+}
+
+.galeria {
+  position: relative;
+  left: 15em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2vw;
+   
+}
+ .galeria img {  
+    width: 90vw;
+    max-width: 25vw;
+    height: auto;
+    border-radius: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    border:5px solid #747171;
+  }
+  
+  .galeria h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: hsl(83, 79%, 56%);
+    font-size: 1.5em;   
+    margin-top: 10px;
+  }
+  .galeria p {    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ccc;
+    font-size: 1.2em;
+    text-align: left;
+    margin-top: 5px;
+  }
+  .galeria button {
+    font-family: monospace;
+    font-style: bold;
+    background-color: hsl(90, 54%, 24%);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .mate1 h4{
+    position: relative;
+    left: 4em;
+  }
+  .mate1 p{
+    position: relative;
+    left: 10em;
+  }
+  .mate1 button{
+    position: relative;
+    left: 14em;
+  }
+  .mate2 h4{
+    position: relative;
+    left: 4em;
+  }
+  .mate3 h4{
+    position: relative;
+    left: 2em;
+  }
+  .mate4 h4{
+    position: relative;
+    left: 3em;
+  }
+  .mate5 h4{
+    position: relative;
+    left: 6em;
+  }
+  .mate6 h4{
+    position: relative;
+    left: 8em;
+  }
+
+
+.img1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+  object-fit: cover;
+}
+
+.compra {
+  font-family: monospace;
+  font-style: bold;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.linea {
+  position: relative;
+  border-top: 2em solid hsl(90, 54%, 24%);
+  transform: translate(0, -2em);
+}
+
+footer {
+  background-color: #f3e62f;
+  bottom: 0;
+  
+}
+
+.footer {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  padding: 30px 20px 10px 20px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+  
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  left: 3em;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 180px;
+}
+
+.footer-section h3 {
+  color: #ffcb05;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 5px;
+}
+
+.footer-section a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+  color: #ffcb05;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  color: #888;
+}
+
+
+@media (max-width: 430px) { /* ---------------------------------------- responsivo para celulares ------*/
+
+
+   body {
+    font-size: 13px;
+    max-width: 100vw;
+    padding: 0 1vw;
+  }
+
+ .he h1 {
+    position: relative;
+    font-size: 2.0em;
+    text-align: center;
+    margin-top: 1em;
+  }
+
+
+  header h2 {
+    font-size: 1em;
+    padding: 0 2px;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 1em;
+    float: none;
+    text-align: center;
+    margin: 0.3em 0;
+  }
+
+  p {
+    font-size: 1em;
+    left: 0;
+    text-align: center;
+    color: #ccc;
+    margin: 0.5em 0;
+  }
+
+  .imagenfondo img {
+    height: 200px;
+    top: -5.5em;
+    max-width: 100vw;
+    object-fit: cover;
+    filter: blur(0px);
+  }
+  .linea {
+    position: relative;
+    top: -20.5em;
+    border-top: 0.7em solid hsl(90, 54%, 24%);
+    width: 100vw; 
+  } 
+
+ 
+
+  .galeria{ /* ----------------- DEFINICION DE LA GALERIA DEL PRODUCTO -------------*/
+    position: relative;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 2em;
+    margin-left: 0;
+    top: -5em;
+  }
+  .galeria img {  /* ----------------- IMAGEN DEL PRODUCTO -------------*/
+    position: relative;
+    top: -17em;
+    width: 96vw;
+    max-width: 100vw;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 2em;
+  }
+  .galeria h4 {  /* ----------------- NOMBRE DEL PRODUCTO -------------*/
+    position: relative;
+    top: -14em;
+    left: 0;
+    font-size: 1.2em;
+    z-index: 1;
+  }
+  .galeria p {  /* ----------------- PRECIOS DEL PRODUCTO -------------*/
+    position: relative;
+    top: -17em;
+    left: 0;
+    text-align: center;
+    font-size: 1em;
+    color: #ccc;
+  }
+
+  .galeria button { /* ----------------- BOTON DE COMPRA -------------*/
+    position: relative;
+    top: -17em;
+    left: 0;
+    font-family: monospace;
+    font-style: bold;
+    background-color: hsl(90, 54%, 24%);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: hand;
+    font-size: 1em;
+    margin-top: 0.5em;
+  }
+
+  .compra {
+    font-family: monospace;
+    font-style: bold;
+    background-color: hsl(90, 54%, 24%);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 80%;
+    margin: 1em auto;
+    display: block; 
+  }
+
+  .publicidad {
+    position: relative;
+    width: 100vw;
+    height: 130vw;
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+    top: 101em;
+    z-index: 1;
+  }
+  
+  /*  ----------------------------------------- FOOTER (PIE DE PAGINA) CELULARES ----------------------------------*/
+  footer, .footer {
+    position: relative;
+    background-color:#1e1e1e;
+    width: 100vw;
+    font-size: 0.8em;
+    padding: 10px 0;
+    top: 5em;
+  }
+
+  .footer-content, .footer-section {
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+
+/* ----------------------------- ESTO SE ENCUENTRA SIN CONTROLAR CON PANTALLA ----------------------------------*/
+
+  @media (min-width: 1024px) and (max-width: 1440px) { /* ------ RESPONSIVO PARA PANTALLAS NORMALES --------*/
+  body {
+    font-size: 18px;
+    max-width: 100vw;
+    padding: 0 5vw;
+  }
+ 
+  .he h1 {
+    position: relative;
+    font-size: 2em;
+    text-align: center;    
+  }
+
+  header h2 {
+    font-size: 2em;
+    padding: 0 10px;
+  }
+
+  h4 {
+    font-size: 2em;
+    float: none;
+    text-align: left;
+    margin: 1em 0;
+  }
+
+  p {
+    font-size: 1.5em;
+    left: 0;
+    text-align: left;
+    color: #ccc;
+  }
+
+  .imagenfondo {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    
+  }
+  .imagenfondo img {
+    position: relative;  
+    height: 350px;
+    top: -12em;
+    max-width: 100vw;
+    object-fit: cover;
+    filter: blur(2px);
+  }
+
+  .publicidad {
+    display: hidden ;
+    width: 60vw;
+    margin-left: 20vw;
+    flex-direction: row;
+    align-items: flex-start;
+    bottom: 2em;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 0;
+    top: 0;
+  }
+
+  .galeria img {
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .img1 {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+  }
+
+  .compra {
+    font-size: 1.2em;
+    width: 80%;
+    margin: 1em auto;
+  }
+
+  .linea {
+    border-top: 1em solid hsl(90, 54%, 24%);
+    width: 100%;
+    top: 0;
+  }
+
+  footer, .footer {
+    width: 100vw;
+    font-size: 1em;
+    padding: 20px 0;
+  }
+
+  .footer-content, .footer-section {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100vw;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1441px) and (max-width: 1920px) { /* ---------- RESPONSIVO PARA NOTEBOOK 16.5 PULGADAS ------*/
+  body {
+    font-size: 22px;
+    max-width: 100vw;
+    padding: 0 10vw;
+  }
+
+  header h1 {
+    font-size: 5em;
+    margin-left: 0;
+    text-align: center;
+    top: 0.5em;
+  }
+
+  header h2 {
+    font-size: 2.5em;
+    padding: 0 20px;
+  }
+
+  h4 {
+    font-size: 2.2em;
+    float: none;
+    text-align: left;
+    margin: 1.5em 0;
+  }
+
+  p {
+    font-size: 1.7em;
+    left: 0;
+    text-align: left;
+    color: #ccc;
+  }
+
+  .imagenfondo img {
+    height: 500px;
+    top: -5em;
+    max-width: 100vw;
+    object-fit: cover;
+    filter: blur(2px);
+  }
+
+  .publicidad {
+    display: hidden;
+    width: 50vw;
+    margin-left: 25vw;
+    flex-direction: row;
+    align-items: flex-start;
+    bottom: 2em;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+    margin-left: 0;
+    top: 0;
+  }
+
+  .galeria img {
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .img1 {
+    width: 100%;
+    height: 250px;
+    border-radius: 25px;
+  }
+
+  .compra {
+    font-size: 1.3em;
+    width: 70%;
+    margin: 1.5em auto;
+  }
+
+  .linea {
+    border-top: 1.5em solid hsl(90, 54%, 24%);
+    width: 100%;
+    top: 0;
+  }
+
+  footer, .footer {
+    width: 100vw;
+    font-size: 1.1em;
+    padding: 30px 0;
+  }
+
+  .footer-content, .footer-section {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100vw;
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+}
+@media (min-width: 1921px) { /* ----------------- RESPONSIVO PARA PANTALLAS GRANDES -------------*/
+  body {
+    font-size: 24px;
+    max-width: 100vw;
+    padding: 0 15vw;
+  }
+
+  header h1 {
+    font-size: 6em;
+    margin-left: 0;
+    text-align: center;
+    top: 0.5em;
+  }
+
+  header h2 {
+    font-size: 3em;
+    padding: 0 30px;
+  }
+
+  h4 {
+    font-size: 2.5em;
+    float: none;
+    text-align: left;
+    margin: 2em 0;
+  }
+
+  p {
+    font-size: 2em;
+    left: 0;
+    text-align: left;
+    color: #ccc;
+  }
+
+  .imagenfondo img {
+    height: 600px;
+    top: -5em;
+    max-width: 100vw;
+    object-fit: cover;
+    filter: blur(2px);
+  }
+
+  .publicidad {
+    display: hidden;
+    width: 40vw;
+    margin-left: 30vw;
+    flex-direction: row;
+    align-items: flex-start;
+    bottom: 2em;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+    margin-left: 0;
+    top: 0;
+  }
+
+  .galeria img {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .img1 {
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+  }
+
+  .compra {
+    font-size: 1.5em;
+    width: 60%;
+    margin: 2em auto;
+   }
+
+   .linea {
+     border-top:2em solid hsl(90,54%,24%);
+     width:100%;
+     top:-1.5em; 
+   }
+  
+   footer, .footer {
+     width:100vw; 
+     font-size :1.2em; 
+     padding :40px; 
+   }
+  
+   .footer-content, .footer-section {
+     flex-direction :row;
+      align-items :flex-start;
+      width:100vw;
+      text-align:left;
+      margin-bottom:0;
+
+}}}
